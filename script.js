@@ -38,7 +38,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const status = document.getElementById('contactStatus');
-  const FORM_ENDPOINT = 'https://formspree.io/f/mjknjrvl'; // <-- replace with your Formspree endpoint
+  const FORM_ENDPOINT = 'https://formspree.io/f/mjknjrvl'; 
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
