@@ -376,7 +376,10 @@ body > * {
 
 .section-text {
   max-width: 40rem;
-  color: var(--muted);
+  color: #d1d5db;
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 /* Skills */
@@ -595,5 +598,20 @@ textarea:focus {
 
   .contact-image img {
     max-width: 280px;
+  }
+
+  /* Skills section - show only 4 cards on mobile but keep animation */
+  .skills-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Hide duplicate cards (last 4 cards) on mobile */
+  .skill-card:nth-child(5),
+  .skill-card:nth-child(6),
+  .skill-card:nth-child(7),
+  .skill-card:nth-child(8) {
+    display: none;
   }
 }
